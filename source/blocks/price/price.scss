@@ -1,0 +1,211 @@
+.price__slider {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 25px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.price__table {
+  width: 840px;
+  border-collapse: collapse;
+}
+
+.price__table th {
+  min-width: 280px;
+}
+
+.price__table th,
+.price__table td {
+  border: 2px solid #e5e5e5;
+}
+
+.price__table tr td:first-child {
+  display: none;
+}
+
+.price__empty-cell {
+  display: none;
+}
+
+.price__table th {
+  height: 100px;
+  padding: 0 70px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #283645
+}
+
+.price__table-th {
+  position: relative;
+}
+
+.price__table-th--hit {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/price-hit-mobile.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.price__table th b {
+  display: block;
+  font-weight: 700;
+}
+
+.price__table td {
+  height: 60px;
+  padding: 0 22px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #283645;
+  background-color: #ffffff;
+}
+
+.price__service {
+  position: relative;
+}
+
+.price__service--ok {
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 15px;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/price-service-ok.svg");
+    background-repeat: no-repeat;
+  }
+
+}
+
+.price__service--none {
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 20px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/price-service-none.svg");
+  }
+
+}
+
+@media (min-width: 660px) {
+  .price__slider {
+    padding-bottom: 70px;
+
+    &::before {
+      height: 50px;
+    }
+  }
+
+  .price__table {
+    width: 100%;
+    padding: 0 3.03%;
+  }
+
+  .price__table th {
+    min-width: 25%;
+  }
+
+  .price__table th {
+    padding: 0 35px;
+  }
+
+  .price__table td {
+    padding: 0 15px;
+  }
+
+  .price__table .price__empty-cell {
+    display: table-cell;
+    border: none;
+    background-color: transparent;
+  }
+
+  .price__table tr td:first-child {
+    display: table-cell;
+  }
+
+  .price__table-th--hit {
+    &::before {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/price-hit-tablet.png");
+    }
+  }
+
+  .price__table .price__service {
+    font-size: 0;
+  }
+
+  .price__service--ok::before,
+  .price__service--none::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .price__controls-list {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price__slider {
+    padding-top: 150px;
+    padding-bottom: 95px;
+  }
+
+  .price__slider::before {
+    height: 80px;
+  }
+
+  .price__table {
+    @include wrapper();
+  }
+
+  .price__table th b {
+    font-size: 18px;
+  }
+
+  .price__table-th--hit {
+    &::before {
+      width: 74px;
+      height: 73px;
+      background-image: url("../img/price-hit-desktop.png");
+    }
+  }
+
+  .price__table td {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Главная страница мобильного приложения «Pink»</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page page--index">
+    <h1 class="visually-hidden">Главная страница мобильного приложения «Pink»</h1>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed main-nav--no-js page-header__main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__top-menu">
+            <a class="main-nav__logo">
+              <span class="visually-hidden">Адаптивный логотип приложения «Pink»: состоящий из набранного текстом названия приложения и очков</span>
+              <svg class="adaptive-logo adaptive-logo--mobile" xmlns="http://www.w3.org/2000/svg" width="75"><use xlink:href="img/sprite.svg#adaptive-logo--mobile"></use></svg>
+              <svg class="adaptive-logo adaptive-logo--tablet" xmlns="http://www.w3.org/2000/svg" width="147"><use xlink:href="img/sprite.svg#adaptive-logo--white-pink-tablet"></use>
+              </svg>
+              <svg class="adaptive-logo adaptive-logo--desktop" xmlns="http://www.w3.org/2000/svg" width="147"><use xlink:href="img/sprite.svg#adaptive-logo--white-pink-desktop"></use></svg>
+            </a>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть навигационное меню для мобильной и планшетной версии</span></button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="intro page-header__intro">
+        <h2 class="visually-hidden">Блок о быстрой загрузке приложения на различные ОС</h2>
+        <p class="intro__app-img">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/intro-desktop.webp">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/intro-tablet.webp">
+            <source type="image/webp" srcset="img/intro-mobile.webp">
+            <source media="(min-width: 1200px)" srcset="img/intro-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/intro-tablet.png">
+            <img src="img/intro-mobile.png" alt="Приложение «Pink», преображающее реальность, в руке пользователя">
+          </picture>
+        </p>
+        <div class="intro__wrapper">
+          <b class="intro__slogan">Взгляните<br> на жизнь<br> иначе!</b>
+          <a class="intro__link" href="#">Скачать приложение</a>
+          <ul class="intro__list-OS">
+            <li class="intro__item-OS">
+              <a class="intro__link-OS intro__link-OS--apple" href="https://www.apple.com/ios/app-store/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="47"><use xlink:href="img/sprite.svg#icon-apple"></use></svg>
+                <span class="visually-hidden">Ссылка на приложение в магазине «Apple»</span></a>
+            </li>
+            <li class="intro__item-OS">
+              <a class="intro__link-OS intro__link-OS--android" href="https://play.google.com/store/apps?hl=ru">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43"><use xlink:href="img/sprite.svg#icon-android"></use></svg>
+                <span class="visually-hidden">Ссылка на приложение в магазине «Google Play»</span>
+              </a>
+            </li>
+            <li class="intro__item-OS">
+              <a class="intro__link-OS intro__link-OS--ms" href="https://www.microsoft.com/ru-ru/store/b/home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44"><use xlink:href="img/sprite.svg#icon-ms"></use></svg>
+                <span class="visually-hidden">Ссылка на приложение в магазине «Microsoft Store»</span>
+              </a>
+            </li>
+          </ul>
+          <p class="intro__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 10</p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества приложения</h2>
+        <header class="advantages__header">
+          <b class="advantages__header-text">Устали от серости мегаполиса?</b>
+          <b class="advantages__header-text">Нам есть, что вам предложить!</b>
+        </header>
+        <div class="advantages__list-wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__list-item">
+              <h3 class="advantanges__title">Поднимает настроение</h3>
+              <p class="advantanges__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__list-item">
+              <h3 class="advantanges__title">Меняет мир вокруг</h3>
+              <p class="advantanges__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__list-item">
+              <h3 class="advantanges__title">Заводит новых друзей</h3>
+              <p class="advantanges__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="research">
+        <div class="research__wrapper">
+          <h3 class="research__title">Эффект<br> на 24 часа!</h3>
+          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="slider reviews__slider">
+          <ul class="slider__slide-list">
+            <li id="slide-1" class="reviews__slider-content reviews__slider-content--active">
+              <blockquote>
+                <cite class="reviews__author">Николай Петров <span class="reviews__author-info">25 лет, водитель трамвая</span></cite>
+                <p class="reviews__slider-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+            <li id="slide-2" class="reviews__slider-content">
+              <blockquote>
+                <cite class="reviews__author">Lorem ipsum <span class="reviews__author-info">Lorem ipsum</span></cite>
+                <p class="reviews__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, tenetur ab tempore dolores. Soluta voluptatibus, repellat labore debitis hic tempore, rerum inventore. Saepe corporis ratione, natus maiores delectus accusantium quasi!</p>
+              </blockquote>
+            </li>
+            <li id="slide-3" class="reviews__slider-content">
+              <blockquote>
+                <cite class="reviews__author">Lorem ipsum <span class="reviews__author-info">Lorem ipsum</span></cite>
+                <p class="reviews__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni omnis necessitatibus, ipsa excepturi odio, beatae doloribus porro voluptatum deleniti aliquid et autem architecto quis vel perferendis facere temporibus error laudantium?</p>
+              </blockquote>
+            </li>
+          </ul>
+          <ul class="slider__controls-list">
+            <li class="slider__controls-item">
+              <button class="slider__controls-btn slider__controls-btn--active" onclick="reviewsChangeSlide(event, 'slide-1')"><span class="visually-hidden">Активировать первый слайд</span></button>
+            </li>
+            <li class="slider__controls-item">
+              <button class="slider__controls-btn" onclick="reviewsChangeSlide(event, 'slide-2')"><span class="visually-hidden">Активировать второй слайд</span></button>
+            </li>
+            <li class="slider__controls-item">
+              <button class="slider__controls-btn" onclick="reviewsChangeSlide(event, 'slide-3')"><span class="visually-hidden">Активировать третий слайд</span></button>
+            </li>
+          </ul>
+          <ul class="slider__arrows-list">
+            <li class="slider__arrows-item">
+              <button class="slider__arrow slider__arrow--prev"><span class="visually-hidden">Предыдущий слайд</span></button>
+            </li>
+            <li class="slider__arrows-item"><button class="slider__arrow slider__arrow--next"><span class="visually-hidden">Следующий слайд</span></button></li>
+          </ul>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Тарифные планы</h2>
+        <div class="slider price__slider">
+          <table class="price__table">
+            <thead>
+              <tr>
+                <th class="price__empty-cell"></th>
+                <th><b>База</b>1,99 USD</th>
+                <th class="price__table-th price__table-th--hit" ><b>Стандарт</b>3,99 USD</th>
+                <th><b>Анлим</b>9,99 USD</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Розовый фильтр</td>
+              <td class="price__service price__service--ok"><span>Розовый фильтр</span> <span class="visually-hidden">есть</span></td>
+              <td class="price__service price__service--ok"><span>Розовый фильтр</span> <span class="visually-hidden">есть</span></td>
+              <td class="price__service price__service--ok"><span>Розовый фильтр</span> <span class="visually-hidden">есть</span></td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td class="price__service price__service--none"><span>Смайлики</span> <span class="visually-hidden">отсутствуют</span></td>
+              <td class="price__service price__service--ok"><span>Смайлики</span> <span class="visually-hidden">есть</span></td>
+              <td class="price__service price__service--ok"><span>Смайлики</span> <span class="visually-hidden">есть</span></td>
+            </tr>
+            <tr>
+              <td>Комментарии</td>
+              <td class="price__service price__service--none"><span>Комментарии</span> <span class="visually-hidden">отсутствуют</span></td>
+              <td class="price__service price__service--none"><span>Комментарии</span> <span class="visually-hidden">отсутствуют</span></td>
+              <td class="price__service price__service--ok"><span>Комментарии</span> <span class="visually-hidden">есть</span></td>
+            </tr>
+          </table>
+          <ul class="slider__controls-list price__controls-list">
+            <li class="slider__controls-item">
+              <button class="slider__controls-btn slider__controls-btn--active" onclick="priceTableMove(event, 'position-1')"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
+            </li>
+            <li class="slider__controls-item">
+              <button class="slider__controls-btn" onclick="priceTableMove(event, 'position-2')"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
+            </li>
+            <li class="slider__controls-item">
+              <button class="slider__controls-btn" onclick="priceTableMove(event, 'position-3')"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Как связаться с компанией</h2>
+        <div class="contacts__text-info">
+          <b>Остались вопросы?<br> Свяжитесь с нами!</b>
+          <p class="contacts__text">
+            Звоните:
+            <a class="contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__text">
+            Пишите:
+            <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__text">
+            Приезжайте в гости:
+            <span class="contacts__data">ул. Большая Конюшенная, 19/8</span>
+          </p>
+        </div>
+        <p class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574908911693!5m2!1sru!2sru"></iframe>
+        </p>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <span class="visually-hidden">Адаптивный логотип приложения «Pink»: состоящий из набранного текстом названия приложения и очков</span>
+          <svg class="adaptive-logo adaptive-logo--tablet" xmlns="http://www.w3.org/2000/svg" width="147"><use xlink:href="img/sprite.svg#adaptive-logo--pink-blue-tablet"></use></svg>
+          <svg class="adaptive-logo adaptive-logo--desktop" xmlns="http://www.w3.org/2000/svg" width="147"><use xlink:href="img/sprite.svg#adaptive-logo--pink-blue-desktop"></use></svg>
+        </a>
+        <section class="social">
+          <h2 class="visually-hidden">Список социальных сетей</h2>
+          <ul class="social__list">
+            <li class="social__list-item">
+              <a class="social__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                <span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="development">
+          <h2 class="visually-hidden">Информация о разработчике</h2>
+          <a href="https://github.com/myLovelyWeb">Разработано: myLovelyWeb</a>
+        </section>
+      </div>
+    </footer>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/slider.min.js"></script>
+  </body>
+</html>

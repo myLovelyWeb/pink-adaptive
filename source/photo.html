@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Фотографии пользователей мобильного приложения Pink</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed main-nav--no-js page-header__main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__top-menu">
+            <a class="main-nav__logo" href="index.html">
+              <span class="visually-hidden">Адаптивный логотип приложения «Pink»: состоящий из набранного текстом названия приложения и очков</span>
+              <svg class="adaptive-logo adaptive-logo--mobile" xmlns="http://www.w3.org/2000/svg" width="75"><use xlink:href="img/sprite.svg#adaptive-logo--mobile"></use></svg>
+              <svg class="adaptive-logo adaptive-logo--tablet" xmlns="http://www.w3.org/2000/svg" width="147"><use xlink:href="img/sprite.svg#adaptive-logo--white-pink-tablet"></use>
+              </svg>
+              <svg class="adaptive-logo adaptive-logo--desktop" xmlns="http://www.w3.org/2000/svg" width="147"><use xlink:href="img/sprite.svg#adaptive-logo--white-pink-desktop"></use></svg>
+            </a>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть навигационное меню для мобильной и планшетной версии</span></button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--active">Фотографии</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__title">Фотографии<br> пользователей</h1>
+    </header>
+    <main>
+      <section class="photo">
+        <h2 class="visually-hidden">Секция с фотографиями</h2>
+        <header class="page__subject-header">
+          <b>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</b>
+        </header>
+        <ul class="photo__post-list">
+          <li class="photo__post-item photo__post-item--best">
+            <p class="photo__post-img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-1-tablet.webp">
+                <source type="image/webp" srcset="img/photo-1-mobile.webp">
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg">
+                <img src="img/photo-1-mobile.jpg" alt="Фото загруженное пользователем">
+              </picture>
+            </p>
+            <blockquote class="photo__post-data">
+              <cite class="photo__user-name">Анна <span class="photo__post-time">(5 минут назад)</span><time class="visually-hidden">5m</time></cite>
+              <p class="photo__user-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <a class="photo__post-likes" href="#">Нравится: 215</a>
+            </blockquote>
+          </li>
+          <li class="photo__post-item">
+            <p class="photo__post-img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-2-tablet.webp">
+                <source type="image/webp" srcset="img/photo-2-mobile.webp">
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg">
+                <img src="img/photo-2-mobile.jpg" alt="Фото загруженное пользователем">
+              </picture>
+            </p>
+            <blockquote class="photo__post-data">
+              <cite class="photo__user-name">Левон <span class="photo__post-time">(5 часов назад)</span><time class="visually-hidden">5h</time></cite>
+              <p class="photo__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <a class="photo__post-likes" href="#">Нравится: 356</a>
+            </blockquote>
+          </li>
+          <li class="photo__post-item">
+            <p class="photo__post-img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-3-tablet.webp">
+                <source type="image/webp" srcset="img/photo-3-mobile.webp">
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg">
+                <img src="img/photo-3-mobile.jpg" alt="Фото загруженное пользователем">
+              </picture>
+            </p>
+            <blockquote class="photo__post-data">
+              <cite class="photo__user-name">Антон <span class="photo__post-time">(12 часов назад)</span><time class="visually-hidden">12h</time></cite>
+              <p class="photo__user-text">Соседи будут рады!</p>
+              <a class="photo__post-likes" href="#">Нравится: 666</a>
+            </blockquote>
+          </li>
+          <li class="photo__post-item">
+            <p class="photo__post-img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-4-tablet.webp">
+                <source type="image/webp" srcset="img/photo-4-mobile.webp">
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg">
+                <img src="img/photo-4-mobile.jpg" alt="Фото загруженное пользователем">
+              </picture>
+            </p>
+            <blockquote class="photo__post-data">
+              <cite class="photo__user-name">Борис <span class="photo__post-time">(20 часов назад)</span><time class="visually-hidden">20h</time></cite>
+              <p class="photo__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <a class="photo__post-likes" href="#">Нравится: 215</a>
+            </blockquote>
+          </li>
+          <li class="photo__post-item">
+            <p class="photo__post-img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-5-desktop.webp">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-5-tablet.webp">
+                <source type="image/webp" srcset="img/photo-5-mobile.webp">
+                <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg">
+                <img src="img/photo-5-mobile.jpg" alt="Фото загруженное пользователем">
+              </picture>
+            </p>
+            <blockquote class="photo__post-data">
+              <cite class="photo__user-name">Сергей <span class="photo__post-time">(25 часов назад)</span><time class="visually-hidden">25h</time></cite>
+              <p class="photo__user-text">Самая кубанская в мире!</p>
+              <a class="photo__post-likes" href="#">Нравится: 4</a>
+            </blockquote>
+          </li>
+          <li class="photo__post-item">
+            <p class="photo__post-img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-6-desktop.webp">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-6-tablet.webp">
+                <source type="image/webp" srcset="img/photo-6-mobile.webp">
+                <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg">
+                <img src="img/photo-6-mobile.jpg" alt="Фото загруженное пользователем">
+              </picture>
+            </p>
+            <blockquote class="photo__post-data">
+              <cite class="photo__user-name">Максим <span class="photo__post-time">(40 часов назад)</span><time class="visually-hidden">40h</time></cite>
+              <p class="photo__user-text">Где снег-то?</p>
+              <a class="photo__post-likes" href="#">Нравится: 150</a>
+            </blockquote>
+          </li>
+          <li class="photo__post-item">
+            <p class="photo__post-img-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-7-desktop.webp">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-7-tablet.webp">
+                <source type="image/webp" srcset="img/photo-7-mobile.webp">
+                <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg">
+                <img src="img/photo-7-mobile.jpg" alt="Фото загруженное пользователем">
+              </picture>
+            </p>
+            <blockquote class="photo__post-data">
+              <cite class="photo__user-name">Надежда <span class="photo__post-time">(45 часов назад)</span><time class="visually-hidden">45h</time></cite>
+              <p class="photo__user-text">Всем GM и взаимные лайки!</p>
+              <a class="photo__post-likes" href="#">Нравится: 2560</a>
+            </blockquote>
+          </li>
+        </ul>
+        <footer class="photo__footer">
+          <b class="photo__footer-text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</b>
+        </footer>
+      </section>
+      <article class="editor">
+        <h2 class="visually-hidden">Онлайн-редактор для фотографий</h2>
+        <form class="editor__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="editor__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/uploaded-photo-tablet.webp">
+              <source type="image/webp" srcset="img/uploaded-photo-mobile.webp">
+              <source media="(min-width: 660px)" srcset="img/uploaded-photo-tablet.jpg">
+              <img src="img/uploaded-photo-mobile.jpg" alt="Фото загруженное пользователем">
+            </picture>
+          </p>
+          <div class="editor__control-panel">
+            <dl class="editor__tools-list">
+              <dt class="editor__tool editor__tool--crap editor__tool--active">
+                <span class="visually-hidden">Кадрирование</span>
+                <svg class="editor__icon-crap" xmlns="http://www.w3.org/2000/svg" width="44"><use xlink:href="img/sprite.svg#icon-crap"></use></svg>
+              </dt>
+              <dd class="editor__controls editor__controls--crap editor__controls--active">
+                <span class="visually-hidden">шкала</span>
+                <div class="editor__scale">
+                  <div class="editor__bar">
+                    <div class="editor__toggle"></div>
+                  </div>
+                </div>
+              </dd>
+              <dt class="editor__tool editor__tool--fill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48"><use xlink:href="img/sprite.svg#icon-fill"></use></svg>
+                <span class="visually-hidden">Заливка</span>
+              </dt>
+              <dd class="editor__controls editor__controls--fill">
+                <span class="visually-hidden">шкала</span>
+                <div class="editor__scale">
+                  <div class="editor__bar">
+                    <div class="editor__toggle"></div>
+                  </div>
+                </div>
+              </dd>
+              <dt class="editor__tool editor__tool--contrast">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32"><use xlink:href="img/sprite.svg#icon-contrast"></use></svg>
+                <span class="visually-hidden">Контрастность</span>
+              </dt>
+              <dd class="editor__controls editor__controls--contrast">
+                <span class="visually-hidden">шкала</span>
+                <div class="editor__scale">
+                  <div class="editor__bar">
+                    <div class="editor__toggle"></div>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <button class="editor__btn editor__btn--upload" type="submit">Запостить</button>
+            <button class="editor__btn editor__btn--cancel" type="button">Отмена</button>
+          </div>
+        </form>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <span class="visually-hidden">Адаптивный логотип приложения «Pink»: состоящий из набранного текстом названия приложения и очков</span>
+          <svg class="adaptive-logo adaptive-logo--mobile" xmlns="http://www.w3.org/2000/svg" width="75"><use xlink:href="img/sprite.svg#adaptive-logo--mobile"></use></svg>
+          <svg class="adaptive-logo adaptive-logo--tablet" xmlns="http://www.w3.org/2000/svg" width="147"><use xlink:href="img/sprite.svg#adaptive-logo--pink-blue-tablet"></use></svg>
+          <svg class="adaptive-logo adaptive-logo--desktop" xmlns="http://www.w3.org/2000/svg" width="147"><use xlink:href="img/sprite.svg#adaptive-logo--pink-blue-desktop"></use></svg>
+        </a>
+        <section class="social page-footer__social">
+          <h2 class="visually-hidden">Список социальных сетей</h2>
+          <ul class="social__list">
+            <li class="social__list-item">
+              <a class="social__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                <span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="development page-footer__development">
+          <h2 class="visually-hidden">Информация о разработчике</h2>
+          <a href="https://github.com/myLovelyWeb">Разработано: myLovelyWeb</a>
+        </section>
+      </div>
+    </footer>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

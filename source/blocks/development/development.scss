@@ -1,0 +1,14 @@
+.development a {
+  display: block;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283645;
+}
+
+@media (min-width: 1200px) {
+  .development a {
+    font-size: 18px;
+  }
+}

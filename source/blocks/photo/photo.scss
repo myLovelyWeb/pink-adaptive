@@ -1,0 +1,263 @@
+.photo__post-list {
+  @include wrapper();
+  @include row-flex();
+
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.photo__post-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo__post-list > .photo__post-item {
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  &:nth-child(2n) {
+    margin-right: 20px;
+  }
+}
+
+.photo__post-item--best {
+  @include col();
+  @include size(12);
+}
+
+.photo__post-img-wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+}
+
+.photo__post-item--best .photo__post-img-wrapper {
+  &::before {
+    position: absolute;
+    content: "Панорама дня";
+    top: 0;
+    right: 6.25%;
+    min-width: 140px;
+    min-height: 36px;
+    font-family: "Open Sans";
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #d22856;
+  }
+}
+
+.photo__post-data {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 100%;
+  margin: 0;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.photo__user-name {
+  width: 100%;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #283645;
+}
+
+.photo__post-time {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo__user-text {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.photo__post-likes {
+  position: relative;
+  margin-top: auto;
+  padding-left: 30px;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d22856;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/likes.svg");
+  }
+}
+
+.photo__footer {
+  @include wrapper();
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.photo__footer-text {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+@media (min-width: 660px) {
+  .photo__header {
+    padding-top: 95px;
+    padding-right: 15.15%;
+    padding-bottom: 80px;
+    padding-left: 15.15%;
+  }
+
+  .photo__header-text {
+    font-size: 18px;
+  }
+
+  .photo__post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .photo__post-item:first-child {
+    width: 100%;
+  }
+
+  .photo__post-list > .photo__post-item:not(:first-child) {
+    margin-top: 50px;
+  }
+
+  .photo__post-list>.photo__post-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .photo__post-list>.photo__post-item:nth-child(3n + 2),
+  .photo__post-list>.photo__post-item:nth-child(3n + 3) {
+    margin-right: 20px;
+  }
+
+
+  .photo__post-item--best .photo__post-img-wrapper::before {
+    top: 57px;
+    right: 3.03%;
+  }
+
+  .photo__user-name {
+    width: auto;
+  }
+
+  .photo__user-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .photo__post-data {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    height: 100%;
+    padding: 30px;
+  }
+
+  .photo__post-item:first-child .photo__post-data {
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .photo__post-item:first-child .photo__user-text {
+    margin-bottom: 0;
+    order: 3;
+  }
+
+  .photo__post-item:first-child .photo__post-likes {
+    margin-top: 0;
+    padding-right: 30px;
+    padding-left: 0;
+    order: 2;
+    cursor: pointer;
+
+    &::before {
+      right: 0;
+      left: unset;
+    }
+  }
+
+  .photo__post-likes {
+    margin-top: auto;
+  }
+
+  .photo__footer {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  .photo__footer-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo__header {
+    padding-bottom: 90px;
+  }
+
+  .photo__post-list {
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .photo__post-item--best .photo__post-img-wrapper::before {
+    right: 10.83%;
+  }
+
+  .photo__post-list>.photo__post-item:nth-child(3n + 2),
+  .photo__post-list>.photo__post-item:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+
+  .photo__post-likes {
+    width: 100%;
+    padding-left: 0;
+
+    &::before {
+      right: 0;
+      left: unset;
+    }
+  }
+}

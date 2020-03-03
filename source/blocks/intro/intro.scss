@@ -1,0 +1,159 @@
+.intro {
+  text-align: center;
+}
+
+.intro__slogan {
+  display: none;
+}
+
+.intro__app-img {
+  margin: 0;
+  font-size: 0;
+}
+
+.intro__wrapper {
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  text-align: center;
+  background-color: #1d2631;
+}
+
+.intro__link {
+  display: block;
+  width: 100%;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.intro__list-OS {
+  @include row-flex();
+
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__item-OS {
+  margin: 0 17px;
+}
+
+.intro__link-OS {
+  font-size: 0;
+}
+
+.intro__link-OS--apple > svg {
+  width: 47px;
+  height: 56px;
+}
+
+.intro__link-OS--android > svg {
+  width: 43px;
+  height: 47px;
+}
+
+.intro__link-OS--ms > svg {
+  width: 44px;
+  height: 41px;
+}
+
+.intro__desc {
+  margin: 0;
+  margin-top: 27px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+@media (min-width: 660px) {
+  .intro {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-right: 20px;
+    padding-bottom: 130px;
+    padding-left: 20px;
+  }
+
+  .intro__app-img {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+
+  .intro__wrapper {
+    @include col();
+    @include size(5.9);
+
+    padding: 0;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  .intro__slogan {
+    display: block;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+
+  .intro__link {
+    margin-top: 35px;
+  }
+
+  .intro__list-OS {
+    margin-top: 35px;
+  }
+
+  .intro__desc {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    max-width: 1200px;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .intro__wrapper {
+    width: 300px;
+  }
+
+  .intro__list-OS {
+    margin-top: 65px;
+  }
+
+  .intro__desc {
+    margin-top: 50px;
+  }
+
+  .intro__slogan {
+    font-size: 50px;
+  }
+
+  .intro__app-img {
+    left: 30%;
+  }
+}

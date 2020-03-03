@@ -1,0 +1,94 @@
+.research {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .research {
+    display: block;
+    background-color: #ffffff;
+  }
+
+  .research__wrapper {
+    position: relative;
+    padding-top: 92px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    padding-left: 330px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 60px;
+      left: 20px;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/timer-tablet.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .research__title {
+    margin: 0;
+    font-family: "Open Sans";
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .research__text {
+    margin: 0;
+    margin-top: 20px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283645;
+  }
+
+  .research__link {
+    display: block;
+    margin-top: 14px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #d22856;
+  }
+}
+
+@media (min-width: 1200px) {
+  .research {
+    background-color: #f2f2f2;
+  }
+
+  .research__wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    padding-top: 85px;
+    padding-right: 130px;
+    padding-bottom: 120px;
+    padding-left: 500px;
+    background-color: #f2f2f2;
+
+    &::before {
+      top: 0;
+      left: 130px;
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/timer-desktop.png");
+    }
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
