@@ -898,6 +898,9 @@ input[type="radio"]:checked + .radio::after {
   font-weight: 400;
   color: #283645; }
 
+.reviews__controls-btn {
+  border: 3px solid #ffffff; }
+
 .slider {
   position: relative; }
 
@@ -906,27 +909,26 @@ input[type="radio"]:checked + .radio::after {
   padding: 0;
   list-style: none; }
 
-.slider__controls-list {
+.slider .slick-dots {
   display: -webkit-box;
   display: flex;
+  margin: 0;
+  padding: 0;
   position: absolute;
   content: "";
   bottom: 40px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin: 0;
-  padding: 0;
   list-style: none; }
 
 .slider__controls-item {
   margin: 0 10px; }
 
 .slider__controls-btn {
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
   padding: 0;
-  border: 0;
   border-radius: 50%;
   background-color: #bec2c7;
   cursor: pointer; }

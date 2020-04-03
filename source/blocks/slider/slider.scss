@@ -9,14 +9,17 @@
 }
 
 .slider__controls-list {
+}
+
+.slider .slick-dots {
   display: flex;
+  margin: 0;
+  padding: 0;
   position: absolute;
   content: "";
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -25,10 +28,9 @@
 }
 
 .slider__controls-btn {
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
   padding: 0;
-  border: 0;
   border-radius: 50%;
   background-color: #bec2c7;
   cursor: pointer;
@@ -40,7 +42,6 @@
   &:not(.slider__controls-btn--active):active {
     background-color: rgba(40, 54, 69, 0.1);
   }
-
 }
 
 .slider__controls-btn--active {

@@ -5,6 +5,7 @@
     <title>Главная страница мобильного приложения «Pink»</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link href="libs/slick/slick.css" rel="stylesheet" >
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page page--index">
@@ -102,41 +103,24 @@
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="slider reviews__slider">
           <ul class="slider__slide-list">
-            <li id="slide-1" class="reviews__slider-content reviews__slider-content--active">
+            <li class="reviews__slider-content reviews__slider-content-1 reviews__slider-content--active">
               <blockquote>
                 <cite class="reviews__author">Николай Петров <span class="reviews__author-info">25 лет, водитель трамвая</span></cite>
                 <p class="reviews__slider-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </li>
-            <li id="slide-2" class="reviews__slider-content">
+            <li class="reviews__slider-content reviews__slider-content-2">
               <blockquote>
                 <cite class="reviews__author">Lorem ipsum <span class="reviews__author-info">Lorem ipsum</span></cite>
                 <p class="reviews__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, tenetur ab tempore dolores. Soluta voluptatibus, repellat labore debitis hic tempore, rerum inventore. Saepe corporis ratione, natus maiores delectus accusantium quasi!</p>
               </blockquote>
             </li>
-            <li id="slide-3" class="reviews__slider-content">
+            <li class="reviews__slider-content reviews__slider-content-3">
               <blockquote>
                 <cite class="reviews__author">Lorem ipsum <span class="reviews__author-info">Lorem ipsum</span></cite>
                 <p class="reviews__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni omnis necessitatibus, ipsa excepturi odio, beatae doloribus porro voluptatum deleniti aliquid et autem architecto quis vel perferendis facere temporibus error laudantium?</p>
               </blockquote>
             </li>
-          </ul>
-          <ul class="slider__controls-list">
-            <li class="slider__controls-item">
-              <button class="slider__controls-btn slider__controls-btn--active" onclick="reviewsChangeSlide(event, 'slide-1')"><span class="visually-hidden">Активировать первый слайд</span></button>
-            </li>
-            <li class="slider__controls-item">
-              <button class="slider__controls-btn" onclick="reviewsChangeSlide(event, 'slide-2')"><span class="visually-hidden">Активировать второй слайд</span></button>
-            </li>
-            <li class="slider__controls-item">
-              <button class="slider__controls-btn" onclick="reviewsChangeSlide(event, 'slide-3')"><span class="visually-hidden">Активировать третий слайд</span></button>
-            </li>
-          </ul>
-          <ul class="slider__arrows-list">
-            <li class="slider__arrows-item">
-              <button class="slider__arrow slider__arrow--prev"><span class="visually-hidden">Предыдущий слайд</span></button>
-            </li>
-            <li class="slider__arrows-item"><button class="slider__arrow slider__arrow--next"><span class="visually-hidden">Следующий слайд</span></button></li>
           </ul>
         </div>
       </section>
@@ -173,13 +157,13 @@
           </table>
           <ul class="slider__controls-list price__controls-list">
             <li class="slider__controls-item">
-              <button class="slider__controls-btn slider__controls-btn--active" onclick="priceTableMove(event, 'position-1')"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
+              <button class="slider__controls-btn slider__controls-btn--active"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
             </li>
             <li class="slider__controls-item">
-              <button class="slider__controls-btn" onclick="priceTableMove(event, 'position-2')"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
+              <button class="slider__controls-btn"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
             </li>
             <li class="slider__controls-item">
-              <button class="slider__controls-btn" onclick="priceTableMove(event, 'position-3')"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
+              <button class="slider__controls-btn"><span class="visually-hidden">Передвинуть таблицу (только для устройств в мобильной версии с разрешением экрана не более чем 767px)</span></button>
             </li>
           </ul>
         </div>
@@ -242,6 +226,16 @@
       </div>
     </footer>
     <script src="js/scripts.min.js"></script>
-    <script src="js/slider.min.js"></script>
+    <script type="text/javascript" src="libs/jQuery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="libs/jQuery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider__slide-list').slick({
+          arrows: false,
+          dots: true
+        });
+      });
+    </script>
   </body>
 </html>

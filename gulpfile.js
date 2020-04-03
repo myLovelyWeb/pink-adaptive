@@ -31,7 +31,7 @@ gulp.task('copy', function() {
   return gulp.src([
     'source/*.html',
     'source/fonts/**/*.{woff,woff2}',
-    'source/vendor/**'
+    'source/libs/**'
   ], {
     base: 'source'
   })
@@ -133,7 +133,7 @@ gulp.task('svg:sprite', function() {
 gulp.task('webp', function() {
   return gulp.src('source/blocks/**/*.{png,jpg}')
     .pipe(rename({dirname: ''}))
-    .pipe(webp({quality: 90}))
+    .pipe(webp({quality: 75}))
     .pipe(gulp.dest('docs/img'));
 });
 
