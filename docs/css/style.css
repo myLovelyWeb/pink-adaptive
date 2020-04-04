@@ -2559,3 +2559,9 @@ input[type="radio"]:checked + .radio::after {
 @media (max-width: 659px) {
   .page--index .page-footer {
     display: none; } }
+
+@media (max-width: 1199px) {
+  .main-nav--no-js {
+    height: unset; }
+  .main-nav--no-js .main-nav__logo {
+    margin: 0 auto; } }

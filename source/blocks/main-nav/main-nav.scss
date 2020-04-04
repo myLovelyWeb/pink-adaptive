@@ -210,6 +210,16 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .main-nav--no-js {
+    height: unset;
+  }
+
+  .main-nav--no-js .main-nav__logo {
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 1200px) {
   .main-nav {
     height: auto;
