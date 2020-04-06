@@ -1,27 +1,16 @@
 .reviews__slider {
   @include wrapper();
 
-  margin: 0;
   padding-top: 45px;
-  padding-bottom: 90px;
   background-color: #ffffff;
-  list-style: none;
 }
 
-.reviews__slider-content {
-  display: none;
-}
-
-.reviews__slider-content--active {
-  display: block;
-}
-
-.reviews blockquote {
+.reviews__slider blockquote {
   margin: 0;
   text-align: center;
 }
 
-.reviews__author {
+.reviews__slider cite {
   font-family: "Open Sans";
   font-size: 18px;
   line-height: 30px;
@@ -30,7 +19,7 @@
   color: #000000;
 }
 
-.reviews__author-info {
+.reviews__slider cite > span {
   display: none;
 }
 
@@ -53,19 +42,19 @@
     padding-top: 0;
   }
 
-  .reviews blockquote {
+  .reviews__slider blockquote {
     display: flex;
     flex-direction: column;
   }
 
-  .reviews__author {
+  .reviews__slider cite {
     order: 2;
     margin-top: 40px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  .reviews__author-info {
+  .reviews__slider cite > span {
     display: block;
     font-family: "Open Sans";
     font-size: 14px;
@@ -90,6 +79,11 @@
   }
 
   .reviews blockquote {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  .reviews blockquote {
     position: relative;
     padding-top: 120px;
 
@@ -106,11 +100,11 @@
     }
   }
 
-  .reviews__author {
+  .reviews__slider cite {
     font-size: 24px;
   }
 
-  .reviews__author-info {
+  .reviews__slider cite > span {
     font-size: 18px;
   }
 }

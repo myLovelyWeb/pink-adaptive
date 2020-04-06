@@ -1,9 +1,6 @@
-.price__slider {
+.price {
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 100px;
   background-color: #f2f2f2;
-  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -17,9 +14,16 @@
   }
 }
 
+.price__slider {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
 .price__table {
   width: 840px;
+  position: relative;
   border-collapse: collapse;
+  transition: 1s;
 }
 
 .price__table th {
@@ -42,7 +46,7 @@
 .price__table th {
   height: 100px;
   padding: 0 70px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -70,6 +74,7 @@
 
 .price__table th b {
   display: block;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -90,7 +95,6 @@
 }
 
 .price__service--ok {
-
   &::before {
     position: absolute;
     content: "";
@@ -101,11 +105,9 @@
     background-image: url("../img/price-service-ok.svg");
     background-repeat: no-repeat;
   }
-
 }
 
 .price__service--none {
-
   &::before {
     position: absolute;
     content: "";
@@ -115,29 +117,41 @@
     height: 27px;
     background-image: url("../img/price-service-none.svg");
   }
+}
 
+.price__slider .slider__btn {
+  background-color: #ffffff;
 }
 
 @media (min-width: 660px) {
-  .price__slider {
-    padding-bottom: 70px;
-
+  .price {
     &::before {
       height: 50px;
     }
   }
 
+  .price__slider {
+    @include wrapper();
+
+    padding-bottom: 70px;
+  }
+
   .price__table {
     width: 100%;
-    padding: 0 3.03%;
+    transform: translate(0, 0) !important;
   }
 
   .price__table th {
-    min-width: 25%;
+    min-width: auto;
+    font-size: 18px;
   }
 
   .price__table th {
     padding: 0 35px;
+  }
+
+  .price__table th b {
+    font-size: 16px;
   }
 
   .price__table td {
@@ -152,6 +166,8 @@
 
   .price__table tr td:first-child {
     display: table-cell;
+    min-width: 157px;
+    text-transform: none;
   }
 
   .price__table-th--hit {
@@ -172,19 +188,21 @@
     transform: translateX(-50%);
   }
 
-  .price__controls-list {
+  .price__slider .slider__dots {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
+  .price {
+    &::before {
+      height: 80px;
+    }
+  }
+
   .price__slider {
     padding-top: 150px;
     padding-bottom: 95px;
-  }
-
-  .price__slider::before {
-    height: 80px;
   }
 
   .price__table {

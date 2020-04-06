@@ -1,16 +1,11 @@
 .slider {
   position: relative;
-}
-
-.slider__slide-list {
   margin: 0;
-  padding: 0;
+  padding-bottom: 90px;
   list-style: none;
 }
 
-.slider__controls-list {
-}
-
+.slider__dots,
 .slider .slick-dots {
   display: flex;
   margin: 0;
@@ -23,52 +18,46 @@
   list-style: none;
 }
 
-.slider__controls-item {
+.slider__dots > li,
+.slider .slick-dots > li {
   margin: 0 10px;
 }
 
-.slider__controls-btn {
-  width: 12px;
-  height: 12px;
-  padding: 0;
+.slider__dots .slider__btn,
+.slider .slick-dots button {
+  padding: 3px;
+  border: 3px solid #ffffff;
   border-radius: 50%;
+  font-size: 0;
   background-color: #bec2c7;
   cursor: pointer;
 
-  &:not(.slider__controls-btn--active):hover {
+  &:hover,
+  &:focus {
     background-color: rgba(40, 54, 69, 0.6);
   }
 
-  &:not(.slider__controls-btn--active):active {
+  &:active {
     background-color: rgba(40, 54, 69, 0.1);
   }
 }
 
-.slider__controls-btn--active {
-  width: 12px;
-  height: 12px;
+.slider__dots .slider__btn--active,
+.slider .slick-dots .slick-active button {
+  padding: 3px;
   border: 3px solid #283645;
   background-color: transparent;
-}
+  outline: none;
 
-.slider__arrows-list {
-  display: none;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 1200px) {
-  .reviews blockquote {
-    padding-right: 13.82%;
-    padding-left: 13.82%;
-  }
-
-  .slider__arrows-list {
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .slider__arrow {
+  .slider .slick-arrow {
     position: absolute;
     content: "";
     top: 215px;
@@ -76,18 +65,29 @@
     height: 41px;
     padding: 0;
     border: none;
+    font-size: 0;
     background-color: transparent;
     background-image: url("../img/slider-arrow.svg");
     background-repeat: no-repeat;
     opacity: 0.3;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 
-  .slider__arrow--prev {
-    left: 10.83%;
+  .slider .slick-prev {
+    left: 0;
   }
 
-  .slider__arrow--next {
-    right: 10.83%;
+  .slider .slick-next {
+    right: 0;
     transform: rotate(180deg);
   }
 }

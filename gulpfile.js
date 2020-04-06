@@ -18,7 +18,7 @@ const server = require('browser-sync').create();
 const smartgrid = require('smart-grid');
 const sourcemaps = require('gulp-sourcemaps');
 const svgstore = require('gulp-svgstore');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const webp = require('gulp-webp');
 
 const isDev = process.argv.includes('--dev');
