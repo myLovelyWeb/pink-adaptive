@@ -46,27 +46,14 @@
   list-style: none;
 }
 
-.contest__label {
-  display: block;
-  cursor: pointer;
-}
-
 .contest__user-name-list > li:not(:first-child),
 .contest__contacts-list > li:not(:first-child) {
   margin-top: 23px;
 }
 
 .contest__achievement-list > li {
-
   &:not(:first-child) {
-  margin-top: 43px;
-  }
-
-  &:focus-within {
-    outline-color: rgb(77, 144, 254);
-    outline-offset: -2px;
-    outline-style: auto;
-    outline-width: 5px;
+  margin-top: 45px;
   }
 }
 

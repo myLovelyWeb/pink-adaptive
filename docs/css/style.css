@@ -367,30 +367,36 @@ textarea:active {
   outline: none; }
 
 .checkbox {
+  display: inline-block;
   position: relative;
   padding-left: 70px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 40px;
-  font-weight: 400; }
-  .checkbox::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #e5e5e5;
-    background-color: #ffffff; }
-  .checkbox:hover::before {
+  font-weight: 400;
+  cursor: pointer; }
+  .checkbox:hover > .checkbox__box {
     border-color: #283645; }
-  .checkbox:active::before {
+  .checkbox:active > .checkbox__box {
     border-color: #d22856; }
 
-input[type="checkbox"]:checked + .checkbox::before {
-  background-image: url("../img/checkbox-mark.svg");
+.checkbox__box {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff; }
+
+input[type="checkbox"]:focus + .checkbox__box {
+  border-color: #283645; }
+
+input[type="checkbox"]:checked + .checkbox__box {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23d22856' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M7.8 19l14-14M7.8 19l-5.6-5.6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 24px 24px;
   background-position: center; }
 
 .radio {
@@ -1492,22 +1498,12 @@ input[type="radio"]:checked + .radio::after {
   padding: 0;
   list-style: none; }
 
-.contest__label {
-  display: block;
-  cursor: pointer; }
-
 .contest__user-name-list > li:not(:first-child),
 .contest__contacts-list > li:not(:first-child) {
   margin-top: 23px; }
 
 .contest__achievement-list > li:not(:first-child) {
-  margin-top: 43px; }
-
-.contest__achievement-list > li:focus-within {
-  outline-color: #4d90fe;
-  outline-offset: -2px;
-  outline-style: auto;
-  outline-width: 5px; }
+  margin-top: 45px; }
 
 .contest__app-list > li:not(:first-child) {
   margin-top: 36px; }
