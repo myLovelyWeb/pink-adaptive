@@ -41,19 +41,19 @@
             <fieldset>
               <ul class="contest__option-list contest__user-name-list">
                 <li>
-                  <label class="contest__label contest__label--name">
+                  <label class="text">
                     <span>Фамилия:</span>
                     <input type="text" name="user-surname" placeholder="Укажите фамилию *">
                   </label>
                 </li>
                 <li>
-                  <label class="contest__label contest__label--name">
+                  <label class="text">
                     <span>Имя:</span>
                     <input type="text" name="user-name" placeholder="Введите ваше имя *">
                   </label>
                 </li>
                 <li>
-                  <label class="contest__label contest__label--name">
+                  <label class="text">
                     <span>Отчество:</span>
                     <input type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
                   </label>
@@ -115,13 +115,13 @@
               <legend>Контактная информация</legend>
               <ul class="contest__option-list contest__contacts-list">
                 <li>
-                  <label class="contest__label contest__label--contacts contest__label--contacts-tel">
+                  <label class="tel">
                     <span>Номер телефона</span>
                     <input type="tel" name="user-tel" placeholder="Номер, пожалуйста">
                   </label>
                 </li>
                 <li>
-                  <label class="contest__label contest__label--contacts contest__label--contacts-email">
+                  <label class="email">
                     <span>Адрес почты</span>
                     <input type="email" name="user-email" placeholder="Введите почту *">
                   </label>
@@ -134,16 +134,25 @@
               <legend>С каким приложением путешествовали?</legend>
               <ul class="contest__option-list contest__app-list">
                 <li>
-                  <input id="app-1" class="visually-hidden" type="radio" name="application" value="iOS" checked>
-                  <label for="app-1" class="radio contest__label contest__label--radio">Pink для iOS</label>
+                  <label class="radio">
+                    <input class="visually-hidden" type="radio" name="application" value="iOS" checked>
+                    <span class="radio__box"></span>
+                    Pink для iOS
+                  </label>
                 </li>
                 <li>
-                  <input id="app-2" class="visually-hidden" type="radio" name="application" value="android">
-                  <label for="app-2" class="radio contest__label contest__label--radio">Pink на Android</label>
+                  <label class="radio">
+                    <input class="visually-hidden" type="radio" name="application" value="android">
+                    <span class="radio__box"></span>
+                    Pink на Android
+                  </label>
                 </li>
                 <li>
-                  <input id="app-3" class="visually-hidden" type="radio" name="application" value="windows-phone">
-                  <label for="app-3" class="radio contest__label contest__label--radio">Windows Phone</label>
+                  <label class="radio">
+                    <input class="visually-hidden" type="radio" name="application" value="windows-phone">
+                    <span class="radio__box"></span>
+                    Windows Phone
+                  </label>
                 </li>
               </ul>
             </fieldset>

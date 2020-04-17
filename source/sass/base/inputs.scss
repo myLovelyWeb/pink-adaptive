@@ -31,7 +31,8 @@ textarea {
     color: #283645;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: #283645;
     outline: none;
   }
@@ -39,6 +40,24 @@ textarea {
   &:active {
     border-color: #d22856;
     outline: none;
+  }
+}
+
+.text,
+.tel,
+.email {
+  cursor: pointer;
+
+  & > span:nth-child(1) {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 23px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d22856;
   }
 }
 
@@ -84,31 +103,42 @@ input[type="checkbox"]:checked + .checkbox__box {
 }
 
 .radio {
+  display: inline-block;
   position: relative;
+  min-height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 70px;
   font-family: "Open Sans";
   font-size: 18px;
-  line-height: 40px;
+  line-height: 30px;
   font-weight: 400;
   color: #283645;
+  cursor: pointer;
 
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #e5e5e5;
-    border-radius: 50%;
-    background-color: #ffffff;
+  &:hover > .radio__box {
+    border-color: #283645;
   }
 
-  &:hover::before {
+  &:focus-within > .radio__box {
     border-color: #283645;
   }
 }
 
-input[type="radio"]:checked + .radio {
+.radio__box {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e5e5e5;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+input[type="radio"]:checked + .radio__box {
   &::before {
     border-color: #d22856;
   }
@@ -116,12 +146,60 @@ input[type="radio"]:checked + .radio {
   &::after {
     position: absolute;
     content: "";
-    top: 13px;
-    left: 13px;
+    top: 50%;
+    left: 11px;
     width: 15px;
     height: 15px;
+    transform: translateY(-50%);
     border-radius: 50%;
     background-color: #d22856;
+  }
+}
+
+@media (min-width: 660px) {
+  .text {
+    display: flex;
+    align-items: center;
+
+    & > span:nth-child(1) {
+      margin-right: 20px;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+  }
+
+  .tel,
+  .email {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    & > span:nth-child(1) {
+      margin-top: 15px;
+      margin-bottom: 0;
+      order: 1;
+    }
+
+    &::after {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .tel::after {
+    background-image: url("../img/phone.svg");
+    background-size: 20px 19px;
+  }
+
+  .email::after {
+    background-image: url("../img/email.svg");
+    background-size: 18px 13px;
   }
 }
 

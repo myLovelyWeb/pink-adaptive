@@ -62,24 +62,6 @@
   &:not(:first-child) {
     margin-top: 36px;
   }
-
-  &:focus-within {
-    outline-color: rgb(77, 144, 254);
-    outline-offset: -2px;
-    outline-style: auto;
-    outline-width: 5px;
-  }
-}
-
-.contest__label > span {
-  display: block;
-  margin-bottom: 10px;
-  padding-left: 23px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #d22856;
 }
 
 .contest__form legend {
@@ -105,7 +87,7 @@
   width: 100%;
   padding: 15px;
   border: none;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -183,58 +165,11 @@
     border: 2px solid #e5e5e5;
   }
 
-  .contest__label--name {
-    display: flex;
-    align-items: center;
-  }
-
-  .contest__label--name > span {
-    margin-bottom: 0;
-    margin-right: 20px;
-    padding-left: 0;
-  }
-
-  .contest__label--contacts {
-    display: flex;
-    flex-direction: column-reverse;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: 2px;
-      right: 2px;
-      content: "";
-      width: 60px;
-      height: 60px;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  }
-
-  .contest__label--contacts-tel {
-    &::before {
-      background-image: url("../img/phone.svg");
-      background-size: 20px 19px;
-    }
-  }
-
-  .contest__label--contacts-email {
-    &::before {
-      background-image: url("../img/email.svg");
-      background-size: 18px 13px;
-    }
-  }
-
-  .contest__label--contacts > span {
-    margin-top: 18px;
-    margin-bottom: 0;
-  }
-
-  .contest__user-name-list li:not(:first-child) {
+  .contest__user-name-list > li:not(:first-child) {
     margin-top: 50px;
   }
 
-  .contest__app-list li:not(:first-child) {
+  .contest__app-list > li:not(:first-child) {
     margin-top: 35px;
   }
 
@@ -250,7 +185,7 @@
   }
 
   .contest__btn {
-    width: 45.45%;
+    width: 300px;
   }
 
   .contest__btn-wrapper > b {
@@ -272,8 +207,13 @@
     @include col();
     @include size(6);
 
+    align-self: flex-end;
     padding-right: 35px;
     padding-left: 0;
+  }
+
+  .contest__user-name-list > li:not(:first-child) {
+    margin-top: 55px;
   }
 
   .contest__form > .contest__wrapper:nth-child(n + 2) fieldset {
@@ -321,7 +261,7 @@
   }
 
   .contest__contacts-list li {
-    width: 45.73%;
+    width: 375px;
 
     &:not(:first-child) {
       margin-top: 0;
