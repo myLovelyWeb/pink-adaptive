@@ -20,8 +20,10 @@
   height: 50px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 3px solid rgba(40, 54, 69, 1);
   }
 
@@ -36,4 +38,19 @@
 
 .social__link > svg {
   fill: #d22856;
+}
+
+.social__link--twitter > svg {
+  width: 18px;
+  height: 14px;
+}
+
+.social__link--facebook > svg {
+  width: 9px;
+  height: 18px;
+}
+
+.social__link--youtube > svg {
+  width: 15px;
+  height: 13px;
 }
