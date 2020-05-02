@@ -25,8 +25,7 @@
     "smart-grid": "^2.1.2"
   },
   "scripts": {
-    "dev": "gulp build --dev && gulp serve",
-    "build": "gulp build",
-    "start": "gulp start"
+    "dev": "gulp build && gulp serve",
+    "build": "gulp build"
   }
 }
