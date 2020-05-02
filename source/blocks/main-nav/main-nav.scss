@@ -52,6 +52,10 @@
     background-color: #d22856;
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &:active::before,
   &:active::after {
     background-color: rgba(210, 40, 86, 0.3);
@@ -176,6 +180,10 @@
   &:hover,
   &:focus {
     color: #d22856;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {

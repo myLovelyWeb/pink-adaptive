@@ -625,6 +625,8 @@ input[type="radio"]:checked + .radio__box::after {
     background-color: #ffffff; }
   .main-nav__toggle:hover::before, .main-nav__toggle:focus::before, .main-nav__toggle:hover::after, .main-nav__toggle:focus::after {
     background-color: #d22856; }
+  .main-nav__toggle:focus {
+    outline: none; }
   .main-nav__toggle:active::before, .main-nav__toggle:active::after {
     background-color: rgba(210, 40, 86, 0.3); }
 
@@ -724,6 +726,8 @@ input[type="radio"]:checked + .radio__box::after {
   background-color: #283645; }
   .main-nav__link:hover, .main-nav__link:focus {
     color: #d22856; }
+  .main-nav__link:focus {
+    outline: none; }
   .main-nav__link:active {
     color: rgba(210, 40, 86, 0.3); }
   .main-nav__link:not([href]) {
@@ -967,6 +971,9 @@ input[type="radio"]:checked + .radio__box::after {
   .slider .slick-dots button:hover,
   .slider .slick-dots button:focus {
     background-color: rgba(40, 54, 69, 0.6); }
+  .slider__dots .slider__btn:focus,
+  .slider .slick-dots button:focus {
+    outline: none; }
   .slider__dots .slider__btn:active,
   .slider .slick-dots button:active {
     background-color: rgba(40, 54, 69, 0.1); }
@@ -998,11 +1005,13 @@ input[type="radio"]:checked + .radio__box::after {
 
 .price__slider {
   padding-top: 90px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  overflow: hidden; }
 
 .price__table {
   width: 840px;
   position: relative;
+  table-layout: fixed;
   border-collapse: collapse;
   -webkit-transition: 1s;
   transition: 1s; }
@@ -1821,7 +1830,9 @@ input[type="radio"]:checked + .radio__box::after {
     line-height: 24px;
     font-weight: 400;
     text-decoration: underline;
-    color: #d22856; }
+    color: #d22856;
+    opacity: 0.3;
+    pointer-events: none; }
   .reviews__slider {
     padding-top: 0; }
   .reviews__slider blockquote {
@@ -1865,7 +1876,7 @@ input[type="radio"]:checked + .radio__box::after {
     min-width: auto;
     font-size: 18px; }
   .price__table th {
-    padding: 0 35px; }
+    padding: 0 30px; }
   .price__table th b {
     font-size: 16px; }
   .price__table td {
@@ -2368,6 +2379,8 @@ input[type="radio"]:checked + .radio__box::after {
     cursor: pointer; }
     .slider .slick-arrow:hover, .slider .slick-arrow:focus {
       opacity: 0.6; }
+    .slider .slick-arrow:focus {
+      outline: none; }
     .slider .slick-arrow:active {
       opacity: 0.1; }
   .slider .slick-prev {

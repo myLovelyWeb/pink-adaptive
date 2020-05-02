@@ -17,11 +17,13 @@
 .price__slider {
   padding-top: 90px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .price__table {
   width: 840px;
   position: relative;
+  table-layout: fixed;
   border-collapse: collapse;
   transition: 1s;
 }
@@ -147,7 +149,7 @@
   }
 
   .price__table th {
-    padding: 0 35px;
+    padding: 0 30px;
   }
 
   .price__table th b {

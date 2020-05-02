@@ -37,6 +37,10 @@
     background-color: rgba(40, 54, 69, 0.6);
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &:active {
     background-color: rgba(40, 54, 69, 0.1);
   }
@@ -75,6 +79,10 @@
     &:hover,
     &:focus {
       opacity: 0.6;
+    }
+
+    &:focus {
+      outline: none;
     }
 
     &:active {
