@@ -20,11 +20,14 @@
   height: 50px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
-  outline: none;
 
   &:hover,
   &:focus {
     border: 3px solid rgba(40, 54, 69, 1);
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 
   &:active {

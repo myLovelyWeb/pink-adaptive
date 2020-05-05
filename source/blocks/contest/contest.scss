@@ -95,8 +95,13 @@
   background-color: #2aab6d;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #1c9b5e;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 
   &:active {

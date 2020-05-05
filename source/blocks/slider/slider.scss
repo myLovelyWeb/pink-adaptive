@@ -37,7 +37,7 @@
     background-color: rgba(40, 54, 69, 0.6);
   }
 
-  &:focus {
+  &:focus:not(:focus-visible) {
     outline: none;
   }
 
@@ -51,12 +51,15 @@
   padding: 3px;
   border: 3px solid #283645;
   background-color: transparent;
-  outline: none;
 
   &:hover,
   &:focus,
   &:active {
     background-color: transparent;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 }
 
@@ -81,7 +84,7 @@
       opacity: 0.6;
     }
 
-    &:focus {
+    &:focus:not(:focus-visible) {
       outline: none;
     }
 

@@ -17,6 +17,7 @@
 
   &:not([href]) {
     pointer-events: none;
+    opacity: 0.3;
   }
 
   &:hover > .adaptive-logo {
@@ -52,7 +53,7 @@
     background-color: #d22856;
   }
 
-  &:focus {
+  &:focus:not(:focus-visible) {
     outline: none;
   }
 
@@ -182,7 +183,7 @@
     color: #d22856;
   }
 
-  &:focus {
+  &:focus:not(:focus-visible) {
     outline: none;
   }
 

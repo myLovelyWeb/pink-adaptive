@@ -605,7 +605,8 @@ input[type="radio"]:checked + .radio__box::after {
 .main-nav__logo {
   font-size: 0; }
   .main-nav__logo:not([href]) {
-    pointer-events: none; }
+    pointer-events: none;
+    opacity: 0.3; }
   .main-nav__logo:hover > .adaptive-logo {
     fill: #d22856; }
   .main-nav__logo:active > .adaptive-logo {
@@ -625,7 +626,7 @@ input[type="radio"]:checked + .radio__box::after {
     background-color: #ffffff; }
   .main-nav__toggle:hover::before, .main-nav__toggle:focus::before, .main-nav__toggle:hover::after, .main-nav__toggle:focus::after {
     background-color: #d22856; }
-  .main-nav__toggle:focus {
+  .main-nav__toggle:focus:not(.focus-visible) {
     outline: none; }
   .main-nav__toggle:active::before, .main-nav__toggle:active::after {
     background-color: rgba(210, 40, 86, 0.3); }
@@ -726,7 +727,7 @@ input[type="radio"]:checked + .radio__box::after {
   background-color: #283645; }
   .main-nav__link:hover, .main-nav__link:focus {
     color: #d22856; }
-  .main-nav__link:focus {
+  .main-nav__link:focus:not(.focus-visible) {
     outline: none; }
   .main-nav__link:active {
     color: rgba(210, 40, 86, 0.3); }
@@ -971,8 +972,8 @@ input[type="radio"]:checked + .radio__box::after {
   .slider .slick-dots button:hover,
   .slider .slick-dots button:focus {
     background-color: rgba(40, 54, 69, 0.6); }
-  .slider__dots .slider__btn:focus,
-  .slider .slick-dots button:focus {
+  .slider__dots .slider__btn:focus:not(.focus-visible),
+  .slider .slick-dots button:focus:not(.focus-visible) {
     outline: none; }
   .slider__dots .slider__btn:active,
   .slider .slick-dots button:active {
@@ -982,13 +983,15 @@ input[type="radio"]:checked + .radio__box::after {
 .slider .slick-dots .slick-active button {
   padding: 3px;
   border: 3px solid #283645;
-  background-color: transparent;
-  outline: none; }
+  background-color: transparent; }
   .slider__dots .slider__btn--active:hover, .slider__dots .slider__btn--active:focus, .slider__dots .slider__btn--active:active,
   .slider .slick-dots .slick-active button:hover,
   .slider .slick-dots .slick-active button:focus,
   .slider .slick-dots .slick-active button:active {
     background-color: transparent; }
+  .slider__dots .slider__btn--active:focus:not(.focus-visible),
+  .slider .slick-dots .slick-active button:focus:not(.focus-visible) {
+    outline: none; }
 
 .price {
   position: relative;
@@ -1217,10 +1220,11 @@ input[type="radio"]:checked + .radio__box::after {
   width: 50px;
   height: 50px;
   border: 3px solid rgba(40, 54, 69, 0.1);
-  border-radius: 50%;
-  outline: none; }
+  border-radius: 50%; }
   .social__link:hover, .social__link:focus {
     border: 3px solid #283645; }
+  .social__link:focus:not(.focus-visible) {
+    outline: none; }
   .social__link:active {
     border: 3px solid rgba(40, 54, 69, 0.1); }
   .social__link:active > svg {
@@ -1591,8 +1595,10 @@ input[type="radio"]:checked + .radio__box::after {
   color: #ffffff;
   background-color: #2aab6d;
   cursor: pointer; }
-  .contest__btn:hover {
+  .contest__btn:hover, .contest__btn:focus {
     background-color: #1c9b5e; }
+  .contest__btn:focus:not(.focus-visible) {
+    outline: none; }
   .contest__btn:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #1c9b5e; }
@@ -2379,7 +2385,7 @@ input[type="radio"]:checked + .radio__box::after {
     cursor: pointer; }
     .slider .slick-arrow:hover, .slider .slick-arrow:focus {
       opacity: 0.6; }
-    .slider .slick-arrow:focus {
+    .slider .slick-arrow:focus:not(.focus-visible) {
       outline: none; }
     .slider .slick-arrow:active {
       opacity: 0.1; }
