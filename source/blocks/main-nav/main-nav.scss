@@ -251,7 +251,6 @@
     height: unset;
     padding-right: 0;
     padding-left: 0;
-    background-color: unset;
   }
 
   .main-nav__toggle {
@@ -292,5 +291,9 @@
       height: 2px;
       background-color: #ffffff;
     }
+  }
+
+  .main-nav--no-js .main-nav__top-menu {
+    background-color: transparent;
   }
 }
