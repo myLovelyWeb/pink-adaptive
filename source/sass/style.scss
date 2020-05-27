@@ -2,9 +2,10 @@
 @import "base/base.scss";
 @import "base/fonts.scss";
 @import "base/inputs.scss";
-@import "mixins/modal.scss";
 @import "grid/smart-grid.scss";
 @import "mixins/wrapper.scss";
+@import "mixins/overlay.scss";
+@import "mixins/modal.scss";
 @import "../blocks/page/page.scss";
 @import "../blocks/page-header/page-header.scss";
 @import "../blocks/main-nav/main-nav.scss";
@@ -22,3 +23,4 @@
 @import "../blocks/photo/photo.scss";
 @import "../blocks/editor/editor.scss";
 @import "../blocks/contest/contest.scss";
+@import "../blocks/status/status.scss";

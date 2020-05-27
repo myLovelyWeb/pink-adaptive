@@ -56,6 +56,15 @@
 
 .intro__link-OS {
   font-size: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .intro__link-OS--apple > svg {

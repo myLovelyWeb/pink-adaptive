@@ -1,13 +1,12 @@
-var submitForm = document.querySelector('.contest__btn');
-var modalSuccess = document.querySelector('.success');
-var closeSuccess = modalSuccess.querySelector('.modal__btn');
+let submitForm = document.querySelector('.contest__form');
+let modalStatusOk = document.querySelector('.status--ok');
+let closeStatusOk = modalStatusOk.querySelector('.status__btn');
 
-submitForm.addEventListener("click", function(event) {
-  event.preventDefault();
-  modalSuccess.classList.add("modal--show");
+submitForm.addEventListener('submit', function(evt) {
+  evt.preventDefault();
+  modalStatusOk.classList.remove('visually-hidden');
 });
 
-closeSuccess.addEventListener("click", function(event) {
-  event.preventDefault();
-  modalSuccess.classList.remove("modal--show");
+closeStatusOk.addEventListener('click', function() {
+  modalStatusOk.classList.add('visually-hidden');
 });

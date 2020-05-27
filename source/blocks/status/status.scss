@@ -1,0 +1,124 @@
+.status__content {
+  width: 320px;
+}
+
+.status__text-wrapper {
+  padding-top: 40px;
+  padding-right: 35px;
+  padding-bottom: 35px;
+  padding-left: 35px;
+  background-color: #ffffff;
+}
+
+.status__title {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+.status__text {
+  margin: 0;
+  margin-top: 35px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #283645;
+}
+
+.status__btn-wrapper {
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  background-color: #ffffff;
+
+  &--bg-grey {
+    padding-top: 50px;
+    background-color: #f2f2f2;
+  }
+}
+
+.status__btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  cursor: pointer;
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+  }
+}
+
+@media (min-width: 660px) {
+  .status__content {
+    width: 460px;
+  }
+
+  .status__text-wrapper {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .status__title {
+    width: 270px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .statud__text {
+    font-size: 18px;
+  }
+
+  .status__btn-wrapper {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .status__btn {
+    padding: 11px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .status__content {
+    width: 780px;
+  }
+
+  .status__text-wrapper {
+    padding-top: 45px;
+    padding-right: 180px;
+    padding-left: 180px;
+  }
+
+  .status__title {
+    width: auto;
+  }
+
+  .status__btn-wrapper {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
+}
